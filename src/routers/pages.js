@@ -119,9 +119,15 @@ router.get('/user/pricing', getAuth.auth, async (req, res) => {
     const totalPoint = req.user.points
 
     const couponHistory = await Coupons.find({ owner: req.user._id})
+
     const couponData = await Price.find({ status: true})
-    const couponMinPrice = await Price.findOne().sort({point : +1})
-    const minCoupon = couponMinPrice.point
+    
+    if(couponData != ""){
+        const couponMinPrice = await Price.findOne().sort({point : +1})
+        var minCoupon = couponMinPrice.point
+    } else {
+        var minCoupon = 1
+    }
 
     const couponHistoryArray = []
     couponHistory.forEach(history => {
