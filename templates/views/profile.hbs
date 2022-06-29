@@ -1,0 +1,32 @@
+{{>header}}
+
+    <section id="profileSection">
+		<div class="container">
+
+			<h1>{{title}}</h1>
+
+			<div id="profile" >
+
+				{{>profilehead}}
+			
+				<div id="sidebarContant" class="row">
+					<div class="col-lg-3">
+						{{>sidebar}}
+					</div>
+					<div class="col-lg-9">
+						<div id="profileEditArea">
+							<ul>
+                                <li><strong>Username: </strong>{{username}}</li>
+                                <li><strong>Email: </strong>{{email}}</li>
+                                <li><strong>Total Points: </strong>{{points}}</li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>				
+	</section>
+
+{{>footer}}

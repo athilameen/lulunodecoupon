@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <h1>{{title}}</h1>
+
+        <form action="/superadminlogin/login" method="post">
+            <input type="text" name="email" placeholder="Enter a email"><br><br>
+            <input type="password" name="password" placeholder="Enter a password"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+       
+
+    </div>
+
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

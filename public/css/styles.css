@@ -1,0 +1,668 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.siteLink{
+	color: #146c43;
+}
+
+.clear{
+	clear: both;
+}
+
+.navbar .container-fluid{
+	padding: 0;
+}
+
+header #logo{
+	margin: 15px 0;
+}
+
+header{
+box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+}
+
+nav{
+	margin: 15px 0;
+}
+
+header .navbar{
+	background: none !important;
+	float: right;
+	margin: 25px 0;
+	padding: 0;
+}
+
+header .navbar ul{
+	margin: 0 auto;
+}
+
+header .navbar ul > li{
+	margin: 0 10px;
+}
+
+header .navbar li a{
+	border-radius: 25px;
+	padding: 10px 25px !important;
+}
+
+header .navbar li a.active,
+header .navbar li a:hover{
+	background-color: #146c43;
+	color: #fff !important;
+}
+
+section{
+	padding-bottom: 100px;
+}
+
+#imgContant h1{
+	margin-top: 70px;
+	margin-bottom: 55px;
+	text-align: center;
+	font-size: 60px;
+	color: #ed1c24 ;
+	font-family: calipari;
+}
+
+h1 span{
+	color: #00a651;
+}
+
+h1.title{
+	text-align: center;
+	font-size: 60px;
+	color: #ed1c24 ;
+	font-family: calipari;
+}
+
+#welcomeImg {
+	padding: 30px 30px;
+    text-align: justify;
+    color: #ffffff;
+    background: #00a651;
+}
+
+#welcomeImg img {
+    float: left;
+    color: #ffffff;
+    margin: 0 30px 0 0;
+}
+
+#RegisterSection h1{
+
+	padding: 50px 0;
+	color: #ed1c24;
+	text-align: center;
+	 
+
+}
+
+footer p{
+	color: #ffffff;
+	background: #303030;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 18px;
+	margin: 0;
+}
+
+#RegisterSection {
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 40px;
+	padding: 10px 100px;
+}
+	
+
+#RegisterSection .box{
+	margin: 0 auto;
+}
+
+#RegisterSection #button {
+	color: #ffffff;
+	background: #037c48;
+	padding: 10px 0;
+}
+
+#RegisterSection #forms{
+	border: 1px solid #cfcfcf;
+	overflow: hidden;
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+	padding: 30px 30px;
+}
+
+.form-row{
+	padding: 20px 0;
+}
+
+.form-row.uploadrow  {
+	padding: 0;
+}
+
+.form-row.uploadrow label {
+    margin-bottom: 20px;
+}
+
+#profileEditArea .form-row.uploadrow input {
+	padding: 0;
+}
+
+#RegisterSection p {
+    text-align: center;
+    margin: 15px 0;
+    color: #000000;
+}
+
+#RegisterSection p#forgotPassword {
+	margin-top: 0;
+}
+
+p#message{
+	color: #ed1c24 ;
+}
+
+p#inmessage{
+	color: #ed1c24 ;
+}
+
+
+.form-control:focus{
+	box-shadow: none;
+	border: 1px solid #ced4da;
+}
+
+.form-row label{
+	float: left;
+    color: #444444;
+}
+
+#RegisterSection #forms a{
+	color: #ed1c24;
+	margin: 0 auto;
+	text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.form-row label.error{
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: .875em;
+    color: #dc3545;
+	text-align: left;
+}
+
+#profileHead{
+	border-top: 1px solid #b7b7b7;
+	padding: 30px 0;
+	border-bottom: 1px solid #b7b7b7;
+	margin-bottom: 50px;
+}
+
+#profileSection h1{
+	padding: 50px 0;
+    color: #ed1c24;
+    text-align: center;
+     
+}
+
+#profileSection{
+	padding-top: 50px;
+}
+
+#profileEditArea{
+    margin-left: 50px;
+}
+
+#profileEditArea ul {
+	margin: 0;
+    padding: 0;
+}
+
+#profileEditArea ul > li {
+	padding: 10px 0;
+    margin: 0;
+    list-style: none;
+    display: block;
+}
+
+#profileEditArea input{
+	display: block;
+	width: 100%;
+    height: 40px;
+	padding: 12px;
+}
+
+#profileEditArea input[type="submit"]{
+	background: #4aa651;
+    border: 0;
+    color: #fff;
+	padding: 0;
+    font-weight: 600;
+}
+
+#sidebar {
+    margin: 0;
+    padding: 15px 0;
+    box-shadow: 10px 0px 13px -9px rgb(0 0 0 / 62%);
+    -webkit-box-shadow: 10px 0px 13px -9px rgb(0 0 0 / 62%);
+    -moz-box-shadow: 10px 0px 13px -9px rgba(0,0,0,0.62);
+}
+
+#sidebar li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li a{
+	text-decoration: none;
+	color: #000000;
+	overflow: hidden;
+	display: block;
+	margin-left: 0;
+	padding: 10px 0;
+}
+
+#sidebar li a.active,
+#sidebar li a:hover{
+	color: #ed1c24;
+}
+
+#profileName{
+	display: flex;
+	align-items: center;
+}
+
+#profileName span{
+	color: #ffffff;
+    font-size: 60px;
+    background: #00a651;
+    text-align: center;
+    margin: 0;
+    float: left;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    border-radius: 50%;
+    line-height: 100px;
+}
+
+#profileName  p{
+	font-size: 30px;
+	color: #303030;
+	margin: 0 0 0 30px;
+	display: block;
+}
+
+.profileMail{
+	float: right;
+    margin: 35px 0 0;
+}
+
+.profileMail p {
+    margin: 0;
+}
+
+.profileMail p strong {
+	color: #ed1c24;
+}
+
+#coupenSection #coupenHead h1{
+	text-align: center;
+	color: #ed1c24;
+	 
+	margin: 70px 0;
+}
+
+#coupenSection #coupenboxContant{
+	border: 2px solid #ed1c24;
+	padding: 45px 0 70px;
+}
+
+#coupenboxContant h1{
+	margin: 0;
+	padding-left: 30PX;
+}
+
+#coupenboxContant p{
+	padding-left: 30px;
+}
+
+#coupenboxContant h3{
+	text-align: center;
+}
+
+#coupenboxContant h4{
+	text-align: center;
+}
+
+#coupenSection #coupenboxContant a{
+	text-decoration: none;
+	color: #ffffff;
+	background: #ed1c24;
+	padding: 10px 30px;
+}
+
+.coupenbox{
+	border: 1px solid #e3e3e3;
+	background: #ffffff;
+	padding: 30px;
+	text-align: center;
+}
+
+.coupenbox.purchased{
+	background: #f1f1f1;
+}
+
+.coupenbox.notpurchase{
+	background: #f5e3e3;
+}
+
+.coupenbox h3{
+	margin: 0;
+}
+
+.coupenbox p{
+	margin: 20px 0;
+}
+
+.coupenbox a{
+	text-decoration: none;
+	color: #ffffff;
+	background: #ed1c24;
+	padding: 10px 30px;
+    display: inline-block;
+}
+
+.coupenbox.purchased a{
+	cursor: default;
+}
+
+.coupenbox a:hover{
+	background: #146c43;
+}
+
+.coupenbox.purchased a:hover{
+	background: #ed1c24;
+}
+
+/* Target => 768*/
+@media screen and (max-width:1023px){
+
+	header #logo {
+	    margin: 10px 0;
+	}
+	
+	#logo img{
+		max-width: 100%;
+	}
+
+	header .navbar {
+	    margin: 18px 0 0;
+	}
+
+	header .navbar ul {
+	    margin: 0 !important;
+	}
+
+	header .navbar ul > li {
+	    margin: 0 5px;
+	}
+
+	header .navbar li a {
+	    padding: 5px 15px !important;
+	}
+
+}
+
+				
+/* Target => 640*/
+@media screen and (max-width:767px){
+
+	section{
+		padding-bottom: 40px;
+	}
+	#welcome img{
+		width: 100%;
+	}		
+	#headerNav #logo{
+		width: 100%;
+	    position: absolute;
+	    text-align: 0;
+		}
+	#nav{
+		width: 100%;
+    	position: relative;
+    	top: 0;
+		}
+	header .navbar{
+		float: none;
+		margin: 25px 0 20px;
+	}
+	.navbar-collapse {
+		margin-top: 30px;
+	}
+
+	header .navbar ul > li {
+    	margin: 3px 5px;
+	}
+
+	section h1 {
+	    font-size: 32px;
+	    margin-top: 30px;
+	    margin-bottom: 30px;
+	}
+		
+}	
+
+/* Target => 480*/
+@media screen and (max-width:639px){
+
+	section{
+		padding-bottom: 30px;
+	}
+
+	#welcome {
+		padding: 20px 20px;
+	}
+
+	header #logo {
+    margin: 15px 0;
+	}
+	
+	header .navbar {
+    margin: 25px 0	;
+	}	
+	.navbar-collapse {
+		margin-top: 30px;
+	}
+
+
+}	
+
+/* Target => 375*/
+
+
+@media screen and (max-width:479px){
+
+	
+	#welcome{
+		font-size: 14px;
+	}
+	.navbar-collapse {
+		margin-top: 30px;}
+	}
+
+
+/* Target => 320*/
+
+@media screen and (max-width:359px){
+
+
+	#welcome {
+    font-size: 12px;
+	}
+	footer p {
+    font-size: 16px;
+    }  
+    .navbar-collapse {
+		margin-top: 30px;
+	}  
+}
+
+/* Target => 768*/
+
+@media screen and (max-width:1023px){
+	#profileEditArea{
+		margin:20px 0 0;
+	}
+}
+
+/* Target => 640*/
+@media screen and (max-width:768px){
+	#profileSection {
+    padding-top: 0;
+	}
+	#profileSection h1 {
+    padding: 25px 0;
+	}
+}
+
+/* Target => 480*/
+
+@media screen and (max-width:639px){
+
+	#profileSection h1 {
+        padding: 20px 0;
+	}
+	#profileName span {
+        color: #ffffff;
+        font-size: 35px;
+        background: #00a651;
+        text-align: center;
+        margin: 0;
+        float: left;
+        font-weight: bold;
+        width: 65px;
+        height: 65px;
+        padding: 0;
+        border-radius: 50%;
+        line-height: 65PX;
+    }
+
+	#profileName p {
+        font-size: 26px;
+        color: #303030;
+        margin: 0 0 0 20px;
+        display: block;
+	}
+
+	.profileMail a {
+    color: #ed1c24;
+    text-decoration: none;
+    font-size: 16px;
+	}
+
+	.profileMail {
+    float: left;
+    margin: 18px 0 0;
+	}
+
+}
+
+/* Target => 320*/
+
+@media screen and (max-width:359px){
+
+	#profileName span {
+        color: #ffffff;
+        font-size: 30px;
+        background: #00a651;
+        text-align: center;
+        margin: 0;
+        float: left;
+        font-weight: bold;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        border-radius: 50%;
+        line-height: 50px;
+	}
+
+	#profileName p {
+        font-size: 26px;
+        color: #303030;
+        margin: 0 0 0 15px;
+        display: block;
+	}
+
+	.profileMail {
+        float: right;
+        margin: 15px 0 0;
+	}
+
+	.profileMail a {
+        color: #ed1c24;
+        text-decoration: none;
+        font-size: 14px;
+	}
+	.profileMail {
+        float: left;
+        margin: 18px 0 0;
+	}
+
+}
+
+/* Target => 1024*/
+
+@media screen and (max-width:1279px){
+	.coupenbox {
+        padding: 23px;
+        text-align: center;
+	}
+}
+
+/* Target => 1024*/
+
+@media screen and (max-width:1279px){
+	.coupenbox{
+		margin: 15px 0;
+	}
+}
+
+
+/* Target => 768*/
+
+@media screen and (max-width:1023px){
+
+	#coupenSection #coupenHead h1 {
+        margin: 50px 0;
+    }
+
+}
+
+/* Target => 480*/
+
+@media screen and (max-width:639px){
+
+    #coupenSection #coupenHead h1 {
+        text-align: center;
+        color: #ed1c24;
+        
+        margin: 40px 0;
+	}
+
+}

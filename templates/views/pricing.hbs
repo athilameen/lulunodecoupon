@@ -1,0 +1,56 @@
+{{>header}}
+
+    <section id="coupenSection">
+		<div class="container">
+			<div id="coupenHead">
+				<h1>{{title}}</h1>
+				<p class="text-center" id="message"></p>
+			</div>
+			<div id="coupenBox">
+				<div class="row">
+					
+					{{#ifEqualLessWithor userpoints mincoupon couponhistory}}
+						{{#each coupondata}}
+							
+								{{#ifMatchString ../couponhistory _id}}
+									<div class="col-lg-4">
+										<div class="coupenbox purchased">
+											<h3>{{name}} <span>Package</span></h3>
+											<p>{{point}} Points</p>
+											<input type="hidden" value="{{_id}}">	
+											<a id="{{name}}" href="javascript:void(0);">PURCHASED</a>	
+										</div>				
+									</div>
+								{{else}}
+									{{#ifEqualLess ../userpoints point}}
+										<div class="col-lg-4">
+											<div class="coupenbox buycoupen">
+												<h3>{{name}} <span>Package</span></h3>
+												<p>{{point}} Points</p>
+												<input type="hidden" value="{{_id}}">	
+												<a id="{{name}}" href="javascript:void(0);">BUY NOW</a>	
+											</div>				
+										</div>
+									{{else}}
+										<div class="col-lg-4">
+											<div class="coupenbox notpurchase">
+												<h3>{{name}} <span>Package</span></h3>
+												<p>{{point}} Points</p>
+												<input type="hidden" value="{{_id}}">	
+												<a id="{{name}}" href="/user/uploadreceipt">GET ENOUGH POINTS</a>	
+											</div>				
+										</div>	
+									{{/ifEqualLess}}
+								{{/ifMatchString}}
+
+						{{/each}}
+					{{else}}
+						<div class="col-lg-12 text-center">You don't have enough points to get coupon. So please get <a class="siteLink" href="/user/uploadreceipt">coupon here</a></div>
+					{{/ifEqualLessWithor}}
+
+				</div>
+			</div>	
+		</div>
+	</section>
+    
+{{>footer}}

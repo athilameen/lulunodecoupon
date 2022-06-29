@@ -1,0 +1,37 @@
+{{>header}}
+
+    <section id="profileSection">
+		<div class="container">
+
+			<h1>{{title}}</h1>
+
+			<div id="profile">
+				
+				{{>profilehead}}
+			
+				<div id="sidebarContant" class="row">
+					<div class="col-lg-3">
+						{{>sidebar}}
+					</div>
+					<div class="col-lg-9">
+						<div id="profileEditArea">
+                            <p id="message"></p>
+                            <form id="uploadForm" enctype="multipart/form-data" method="POST">
+                                <div class="form-row uploadrow">
+                                    <label>Upload Reciept:</label>  
+                                    <input type="file" id="fileupload" name="fileupload" />
+                                </div>
+                                <div class="form-row">
+                                    <input type="submit" id="button" class="form-control" value="Upload">
+                                </div>   
+                        </form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>				
+	</section>
+
+{{>footer}}

@@ -1,0 +1,29 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "12390000000003077",
+      "name": "LuLuOCR",
+      "domain": {
+        "id": "10044615830",
+        "name": "luluocr-783106151.development"
+      },
+      "env": [
+        {
+          "idx": 1,
+          "id": "783106151",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

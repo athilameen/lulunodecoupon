@@ -1,0 +1,46 @@
+{{>header}}
+
+    <section id="RegisterSection" >
+		<div class="container">
+			<h1 class="title">{{title}}</h1>
+
+            <div class="row">
+				<div class="col-lg-12">
+					<p id="message"></p>
+                    
+                    <div id="forms">
+                        
+                        {{#if registernow}}
+                            <p id="inmessage">You have been successfully registered. Now Sign In</p>
+                        {{/if}}
+                        
+                        <form id="loginForm" method="POST">
+
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" name="email" id="email" placeholder="Enter a Email Id">
+                            </div>
+                            
+                            <div class="form-row">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Enter a password">
+                            </div>
+                        
+                            <div class="form-row">
+                                <input type="submit" id="button" class="form-control" value="Login">
+                            </div>
+                            <p id="forgotPassword"><a href="/user/forgot-password">Forgot Your Password?</a></p>
+
+                            <p>Create an Account</p>
+                            <a href="/user/register">Signup</a>
+
+                        </form>
+                    </div>
+				</div>
+			</div>
+            
+			
+		</div>
+	</section>
+
+{{>footer}}

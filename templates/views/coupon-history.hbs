@@ -1,0 +1,49 @@
+{{>header}}
+
+    <section id="profileSection">
+		<div class="container">
+
+			<h1>{{title}}</h1>
+
+			<div id="profile" >
+
+				{{>profilehead}}
+			
+				<div id="sidebarContant" class="row">
+					<div class="col-lg-3">
+						{{>sidebar}}
+					</div>
+					<div class="col-lg-9">
+						<div id="profileEditArea">
+                            <table class="table table-bordered table-striped" style="vertical-align: middle;">
+                                <tr>
+                                    <th>S.no</th>
+                                    <th>Package</th>
+                                    <th>Points</th>
+                                    <th>Date and Time</th>
+                                </tr>
+                                {{#if couponhistory}}
+                                {{#each couponhistory}}
+                                <tr>
+                                    <td>{{addOne @index}}</td>
+                                    <td>{{name}}</td>
+                                    <td>{{points}}</td>
+                                    <td>{{formatDate createdAt "long"}}</td>
+                                </tr>
+                                {{/each}}
+                                {{else}}
+                                <tr>
+                                    <td class="text-center" colspan="4">None of Coupon history records</td>
+                                </tr>
+                                {{/if}}
+                            </table>
+					    </div>
+                    </div>
+				</div>
+
+			</div>
+
+		</div>				
+	</section>
+
+{{>footer}}

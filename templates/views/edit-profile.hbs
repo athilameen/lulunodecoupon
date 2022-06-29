@@ -1,0 +1,33 @@
+{{>header}}
+
+    <section id="profileSection">
+		<div class="container">
+
+			<h1>{{title}}</h1>
+
+			<div id="profile">
+				
+				{{>profilehead}}
+			
+				<div id="sidebarContant" class="row">
+					<div class="col-lg-3">
+						{{>sidebar}}
+					</div>
+					<div class="col-lg-9">
+						<div id="profileEditArea">
+                            <p id="message"></p>
+                            <form id="editProfile" action="/user/editprofile" method="post">
+                                <label for="username">Name</label><br>
+                                <input type="text" id="username" name="username" value="{{username}}" /><br><br>
+                                <input type="submit">
+                            </form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>				
+	</section>
+
+{{>footer}}

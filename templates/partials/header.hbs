@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{title}} :: Lu Lu Hypermarket</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div id="headerNav" class="row">
+				
+				<div id="logo" Class="col-lg-3 col-md-3 col-sm-12">
+					<a href="/"><img src="{{siteurl}}/img/logo.png"></a>
+				</div>
+
+				<div id="nav" class="col-lg-9 col-md-9 col-sm-12">
+					<nav class="navbar navbar-expand-md navbar-light bg-light">
+						<div class="container-fluid">
+					    	<a class="navbar-brand" href="#"></a>
+						    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						      <span class="navbar-toggler-icon"></span>
+						    </button>
+						    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						        <li class="nav-item">
+						          <a class="nav-link {{#ifEquals menu "home"}}active{{/ifEquals}}" href="/">Home</a>
+						        </li>
+						        <li class="nav-item">
+						          <a class="nav-link {{#ifEquals menu "faq"}}active{{/ifEquals}}" href="/faq">FAQ</a>
+						        </li>
+						        <li class="nav-item">
+						          <a class="nav-link {{#ifEquals menu "terms-conditions"}}active{{/ifEquals}}" href="/terms-and-conditions">Terms & Conditions</a>
+						        </li>
+								{{#ifEquals userdata "authenticatefail"}}
+						        	<li class="nav-item">
+						          		<a class="nav-link {{#ifEquals menu "login"}}active{{/ifEquals}}" href="/user/login">SignIn / SignUp</a>
+						        	</li>
+								{{else}}
+									<li class="nav-item">
+						          		<a class="nav-link {{#ifEquals menu "pricing"}}active{{/ifEquals}}" href="/user/pricing">Pricing</a>
+						        	</li>
+									<li class="nav-item">
+						          		<a class="nav-link {{#ifEquals menu "profile"}}active{{/ifEquals}}" href="/user/profile">My Account</a>
+						        	</li>
+								{{/ifEquals}}
+						    </div>
+					  	</div>
+					</nav>
+				</div>
+			</div>
+		</div> 
+	</header>
