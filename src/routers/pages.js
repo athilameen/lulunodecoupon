@@ -119,15 +119,9 @@ router.get('/user/pricing', getAuth.auth, async (req, res) => {
     const totalPoint = req.user.points
 
     const couponHistory = await Coupons.find({ owner: req.user._id})
-
     const couponData = await Price.find({ status: true})
-    
-    if(couponData != ""){
-        const couponMinPrice = await Price.findOne().sort({point : +1})
-        var minCoupon = couponMinPrice.point
-    } else {
-        var minCoupon = 1
-    }
+    const couponMinPrice = await Price.findOne().sort({point : +1})
+    const minCoupon = couponMinPrice.point
 
     const couponHistoryArray = []
     couponHistory.forEach(history => {
@@ -145,6 +139,42 @@ router.get('/user/pricing', getAuth.auth, async (req, res) => {
          coupondata: couponData
     })
   
+})
+
+router.get('/set', async (req, res) => {
+
+    const price = new Price({
+        name: 'Silver',
+        point: 10,
+        status: true
+    })
+
+    price.save().then((doc) => res.status(201).send(doc));
+
+})
+
+router.get('/set1', async (req, res) => {
+
+    const price = new Price({
+        name: 'Gold',
+        point: 15,
+        status: true
+    })
+
+    price.save().then((doc) => res.status(201).send(doc));
+
+})
+
+router.get('/set2', async (req, res) => {
+
+    const price = new Price({
+        name: 'Platinum',
+        point: 20,
+        status: true
+    })
+
+    price.save().then((doc) => res.status(201).send(doc));
+
 })
 
 router.get('/*', getAuth.ifuserloggedin, async (req, res) => {
